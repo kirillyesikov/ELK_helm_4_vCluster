@@ -1,3 +1,20 @@
 apiVersion: v1
-entries: {}
-generated: "2025-01-02T13:48:23.8209118-05:00"
+entries:
+  elasticsearch:
+  - apiVersion: v1
+    appVersion: 8.5.1
+    created: "2025-01-02T13:58:08.8743283-05:00"
+    description: Official Elastic helm chart for Elasticsearch
+    digest: a96ce8b9fc9fcdd6a879663f58c5638f5d03fec36712278d3762e73f6b03908e
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/elasticsearch.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: elasticsearch
+    sources:
+    - https://github.com/elastic/elasticsearch
+    urls:
+    - https://kirillyesikov.github.io/ELK_helm_4_vCluster/elasticsearch-8.5.1.tgz
+    version: 8.5.1
+generated: "2025-01-02T13:58:08.8713406-05:00"
