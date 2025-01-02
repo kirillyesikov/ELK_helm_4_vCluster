@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "kibana_4_vCluster.fullname" . }}-test-connection"
+  labels:
+    {{- include "kibana_4_vCluster.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "kibana_4_vCluster.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never

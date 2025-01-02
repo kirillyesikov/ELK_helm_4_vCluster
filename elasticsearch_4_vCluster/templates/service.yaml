@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "elasticsearch_4_vCluster.fullname" . }}
+  labels:
+    {{- include "elasticsearch_4_vCluster.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "elasticsearch_4_vCluster.selectorLabels" . | nindent 4 }}
