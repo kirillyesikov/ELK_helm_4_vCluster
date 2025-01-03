@@ -9,11 +9,10 @@ replicas: 1
 logstashConfig: 
   logstash.yml: |
     http.host: 0.0.0.0
-
     xpack.monitoring.enabled: true
     xpack.monitoring.elasticsearch.hosts: ["https://elasticsearch-master:9200"]
     xpack.monitoring.elasticsearch.username: elastic
-    xpack.monitoring.elasticsearch.password: yTjYv8k2ToK52uEU
+    xpack.monitoring.elasticsearch.password: yTjYv8k2ToK52uEU   
     xpack.monitoring.elasticsearch.ssl.certificate_authority: "/usr/share/elasticsearch/config/certs/ca.crt"
 
 # Allows you to add any pipeline files in /usr/share/logstash/pipeline/
