@@ -12,6 +12,9 @@ helm upgrade --install elastic ELK_4_vCluster/elasticsearch  -n logging --create
 
 helm upgrade --install kibana ELK_4_vCluster/kibana  -n logging  --set replicas=1
 
-helm upgrade --install logstash ELK_4_vCluster/logstash  -n logging --set replicas=1
+##Make sure you change the passowrd for the logstash before install the chart
+
+
+helm upgrade --install logstash ELK_4_vCluster/logstash -f ./values.yaml  -n logging --set replicas=1
 
 ```
