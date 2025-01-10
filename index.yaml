@@ -3,7 +3,7 @@ entries:
   elasticsearch:
   - apiVersion: v1
     appVersion: 8.5.1
-    created: "2025-01-02T14:20:31.6539445-05:00"
+    created: "2025-01-10T18:39:11.2359387-05:00"
     description: Official Elastic helm chart for Elasticsearch
     digest: a96ce8b9fc9fcdd6a879663f58c5638f5d03fec36712278d3762e73f6b03908e
     home: https://github.com/elastic/helm-charts
@@ -17,10 +17,42 @@ entries:
     urls:
     - https://kirillyesikov.github.io/ELK_helm_4_vCluster/elasticsearch-8.5.1.tgz
     version: 8.5.1
+  fluent-bit:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: "Updated Fluent Bit OCI image to v3.2.4."
+    apiVersion: v1
+    appVersion: 3.2.4
+    created: "2025-01-10T18:39:11.2379396-05:00"
+    description: Fast and lightweight log processor and forwarder or Linux, OSX and
+      BSD family operating systems.
+    digest: 2cfdb5a796551957b7e96e675472dbf5202fd013011f28e40b836a3ef4d9e281
+    home: https://fluentbit.io/
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/fluentd/fluentbit/icon/fluentbit-icon-color.svg
+    keywords:
+    - logging
+    - fluent-bit
+    - fluentd
+    maintainers:
+    - email: eduardo@calyptia.com
+      name: edsiper
+    - email: naseem@transit.app
+      name: naseemkullah
+    - email: towmeykaw@gmail.com
+      name: Towmeykaw
+    - email: steve.hipwell@gmail.com
+      name: stevehipwell
+    name: fluent-bit
+    sources:
+    - https://github.com/fluent/fluent-bit/
+    urls:
+    - https://kirillyesikov.github.io/ELK_helm_4_vCluster/fluent-bit-0.48.4.tgz
+    version: 0.48.4
   kibana:
   - apiVersion: v1
     appVersion: 8.5.1
-    created: "2025-01-02T14:20:31.6549826-05:00"
+    created: "2025-01-10T18:39:11.2472419-05:00"
     description: Official Elastic helm chart for Kibana
     digest: 6679aaa8a7430162564c61dfda459ea0d838d02f123ddf66efb5d99e7c03c5a7
     home: https://github.com/elastic/helm-charts
@@ -37,7 +69,7 @@ entries:
   logstash:
   - apiVersion: v1
     appVersion: 8.5.1
-    created: "2025-01-02T14:20:31.6560282-05:00"
+    created: "2025-01-10T18:39:11.2660763-05:00"
     description: Official Elastic helm chart for Logstash
     digest: 378c7b49ec463dd8305d75bdd2d6ad366826459bd31c0040d676dc3ef2cc6ad1
     home: https://github.com/elastic/helm-charts
@@ -51,4 +83,4 @@ entries:
     urls:
     - https://kirillyesikov.github.io/ELK_helm_4_vCluster/logstash-8.5.1.tgz
     version: 8.5.1
-generated: "2025-01-02T14:20:31.6346452-05:00"
+generated: "2025-01-10T18:39:11.2222496-05:00"
